@@ -1,0 +1,26 @@
+.botao {
+    font-size: 1.4rem;
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.botao-wide {
+    grid-column: span 2;
+}
+
+.operador {
+    background-color: orange;
+    color: white;
+}
+
+.operador-wide {
+    grid-column: span 2;
+}
+
+.botao:active,
+.operador:active {
+    background-color: white;
+    color: black;
+}
