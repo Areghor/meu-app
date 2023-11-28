@@ -30,7 +30,7 @@ function PackingList() {
 
   return (
     <section className='PackingList'>
-      <h1>Gabriel Packing List</h1>
+      <h1>Victor Packing List</h1>
       <ul>
         {items.map((item) => (
           <Item
