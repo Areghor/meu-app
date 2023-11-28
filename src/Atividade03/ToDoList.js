@@ -1,28 +1,38 @@
+import React, { useState } from 'react';
 import imgMan from './images/man.png';
 import './ToDoList.css';
 
-
 const person = {
-  name: "Gabriel Zampieri",
-  theme : {
+  name: 'Victor Hugo',
+  theme: {
     backgroundColor: 'black',
-    color: 'pink'
-  }
+    color: 'pink',
+  },
 };
 
 function ToDoList() {
+  const [todos, setTodos] = useState([
+    'Improve the videophone',
+    'Prepare aeronautics lectures',
+    'Work on the alcohol-fuelled engine',
+  ]);
+
+  const toggleTodo = (index) => {
+    const newTodos = [...todos];
+    newTodos[index] = newTodos[index] + ' ✓';
+    setTodos(newTodos);
+  };
+
   return (
-    <div style={person.theme}>
+    <div className='ToDoList' style={person.theme}>
       <h1>{person.name}'s Todos</h1>
-      <img
-        className='avatar'
-        src={imgMan}
-        alt="Gabriel Zampieri"
-      />
+      <img className='avatar' src={imgMan} alt='Victor Hugo' />
       <ul>
-        <li>Improve the videophone</li>
-        <li>Prepare aeronautics lectures</li>
-        <li>Work on the alcohol-fuelled engine</li>
+        {todos.map((todo, index) => (
+          <li key={index} onClick={() => toggleTodo(index)}>
+            {todo}
+          </li>
+        ))}
       </ul>
     </div>
   );

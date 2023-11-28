@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './Relogio.css';
 
@@ -15,19 +14,24 @@ class Relogio extends React.Component {
     this.setState({ horario: new Date() });
   }
 
-  render() {
-    // Configura um intervalo para atualizar o horário a cada segundo
-    setInterval(() => {
+  componentDidMount() {
+    this.intervalId = setInterval(() => {
       this.atualizarHorario();
     }, 1000);
+  }
 
+  componentWillUnmount() {
+    clearInterval(this.intervalId);
+  }
+
+  render() {
     const { horario } = this.state;
     const formated_data = horario.toLocaleDateString('pt-br');
     const formated_horario = horario.toLocaleTimeString('pt-br');
     const horario_completo = formated_data + " " + formated_horario;
 
     return (
-      <div>
+      <div className="Relogio"> {}
         <h2>{horario_completo}</h2>
       </div>
     );

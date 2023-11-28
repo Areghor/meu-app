@@ -1,3 +1,27 @@
-.Avatar {
-    border: 1px solid black;
-}
+.ToDoList {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: pink;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: black;
+    color: pink;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  

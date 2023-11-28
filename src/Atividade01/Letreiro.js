@@ -11,14 +11,17 @@ class Letreiro extends React.Component {
       texto: "",
     };
 
-    // Configure o intervalo para atualizar o texto a cada segundo no construtor
-    setInterval(() => {
+    this.intervalId = setInterval(() => {
       this.atualizarTexto();
     }, 300);
   }
 
+  componentWillUnmount() {
+    clearInterval(this.intervalId);
+  }
+
   atualizarTexto() {
-    if (this.i < this.textoTotal.length-1) {
+    if (this.i < this.textoTotal.length - 1) {
       this.setState((prevState) => ({
         texto: prevState.texto + this.textoTotal[this.i],
       }));
@@ -26,11 +29,11 @@ class Letreiro extends React.Component {
     } else {
       this.i = 0;
       this.texto = "";
-      
+
       this.setState(() => ({
         texto: "",
-        i: 0
-    }));
+        i: 0,
+      }));
     }
   }
 
@@ -38,7 +41,7 @@ class Letreiro extends React.Component {
     const { texto } = this.state;
 
     return (
-      <div>
+      <div className="Letreiro"> {}
         <h1>{texto}</h1>
       </div>
     );
