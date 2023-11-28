@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lexend Mega", sans-serif;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+header{
+  position: absolute;
+  display: flex;
+  align-self: flex-start;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  color: #a8dadc;
+  background-color: #457b9d;
+}
+

@@ -1,0 +1,39 @@
+#tabuleiro {
+    display: grid;
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px;
+  }
+  footer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+    background-color: #272624;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    bottom: 0px;
+  
+  }
+  #footerimg {
+    width: 60px;
+  }
+  #footerimg:hover {
+    width: 70px;
+  }
+  #footertext {
+    color: white;
+    font-family: "Inconsolata", monospace;
+  }
+  #gridFt {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    gap: -10px;
+    width: 370px;
+  }

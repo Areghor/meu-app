@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.Contador-contador-full {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contador-header {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Contador-body {
+    width: 400px;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Contador-title {
+    display: flex;
+    margin-left: 100px;
+}
+
+.Contador-person {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contador-buttons {
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Contador-button-img {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+
+.Contador-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+}
+
+.Contador-contador {
+    font-size: 22px;
+    color: grey;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px 50px;
+    margin-top: -10px;
+}
