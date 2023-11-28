@@ -1,0 +1,49 @@
+.numero {
+    font-size: 1.4rem;
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.numero-2 {
+    grid-column: span 2;
+    font-size: 1.4rem;
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.operador { 
+    background-color: orange; 
+    color: white;
+    border: 1px solid grey;   
+}
+
+.operador-2 {
+    background-color: orange; 
+    color: white;
+    border: 1px solid grey;   
+    grid-column: span 2;
+}
+
+.numero:active {
+    background-color: white;
+    color: black;
+}
+
+.numero-2:active {
+    background-color: white;
+    color: black;
+}
+
+.operador:active {
+    background-color: white;
+    color: orange;
+}
+
+.operador-2:active {
+    background-color: white;
+    color: orange;
+}
