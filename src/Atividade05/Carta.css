@@ -22,9 +22,9 @@
     transform: rotateY(180deg);
   }
   .card_front {
-    background-color: #f1faee;
+    background-color: #6fe846;
     transform: rotateY(180deg);
   }
   .card_back {
-    background-color: #5e459d;
+    background-color: #efe703;
   }
